@@ -1,0 +1,208 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0 auto;
+	font-family: 'Montserrat', sans-serif;
+	color: #000;
+	background-color: #e5e5e5;
+}
+
+h1 {
+	font-size: 50px;
+	padding: 0;
+	margin: 0;
+}
+
+h4 {
+	font-size: 24px;
+	margin: 0;
+	padding: 0;
+}
+
+
+.container {
+	background-color: #fff;
+	max-width: 940px;
+	margin: 30px auto ;
+	text-align: center;
+}
+
+.gameArea {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: flex-start;
+}
+
+.sideContainer {
+	background-color: #fbf0d3;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	margin: 0 40px;
+	padding: 0;
+	height: 130px;
+	width: 250px;
+
+}
+
+.chart {
+	margin: 0 7px;
+}
+
+.fas, .far {
+	margin: 0;
+	padding: 15px;
+	font-size: 70px;
+}
+
+.fa-circle {
+	color: #85f4ab;
+}
+
+.fa-times {
+	color: #910d44;
+}
+
+.row {
+	display: flex;
+	flex-direction: row;
+	padding: 0;
+	margin: 0;
+}
+
+.square {
+	width: 100px;
+	height: 100px;
+	margin: 0;
+	padding: 0;
+}
+
+#gameTitle {
+	text-transform: uppercase;
+	padding: 50px 0 30px 0;
+	margin: 0;
+}
+
+#timer {
+	font-size: 24px;
+	margin: 0;
+	padding: 0 0 10px 0;
+	font-weight: 500;
+}
+
+#playersNames, #playersScores{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+
+#playersNames, #playersScores, #counts h4, #counts h1 {
+	margin: 0;
+	padding: 15px 15px 0;
+}
+
+
+#gameBoard {
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+}
+
+#square4 {
+	border: 0.25px solid #000;
+}
+
+#square1, #square7 {
+	border-left: 0.25px solid #000;
+	border-right: 0.25px solid #000
+}
+
+#square3, #square5 {
+	border-top: 0.25px solid #000;
+	border-bottom: 0.25px solid #000
+}
+
+#gameStart {
+	transition: all 0.3s ease-in-out;
+	background-color: #4def84;
+	width: 180px;
+	color: #fff;
+	font-size: 18px;
+	padding: 12px 0;
+	font-weight: 600;
+	border-radius: 22px;
+	border: 1px solid #4def84;
+	margin: 20px 0;
+	cursor: pointer;
+}
+
+#gameStart:hover {
+	color: #4def84;
+	background-color: #fff;
+}
+
+@media (max-width: 991px) {
+	h1 {
+		font-size: 40px;
+	}
+	h4 {
+		font-size: 22px;
+	}
+	.square {
+		width: 90px;
+		height: 90px;
+	}
+	.fas, .far {
+		padding: 15px;
+		font-size: 60px;
+	}
+}
+
+@media (max-width: 780px) {
+	body {
+		background-color: #fff;
+	}
+	h1 {
+		font-size: 30px;
+	}
+	h4 {
+		font-size: 18px;
+	}
+	.container {
+		margin: 10px auto 
+	}
+	.sideContainer {
+		margin: 15px 0;
+		height: 100px;
+		width: 200px;
+	}
+	.square {
+		width: 80px;
+		height: 80px;
+	}
+	.fas, .far {
+		padding: 15px;
+		font-size: 50px;
+	}
+	#gameTitle {
+		padding: 30px 0 15px 0;
+	}
+	.gameArea {
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: center;
+	}
+	#gameBoard {
+		margin: 15px 0;
+	}
+	#gameStart:hover {
+		display: none;
+	}
+}
+
+
